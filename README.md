@@ -33,8 +33,9 @@
 3: Delete user in database:
    This Endpoint is used to delete the data from table using by meetUpID<br/> 
 	A- > if user id will be in db it will delete that user record in db.<br/>
- 	B-> if not then it will throw the exception<br/>	
-	API ENDPOINT : http://localhost:8080/meetup/delete/2
+ 	B-> if not then it will throw the exception<br/>
+        API ENDPOINT :  http://localhost:8080/meetup/delete/{meetUpID}<br/>
+   <br/>Example :       http://localhost:8080/meetup/delete/2<br/>
 
 </br>=================================================================<br/>
 
