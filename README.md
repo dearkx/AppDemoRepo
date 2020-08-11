@@ -55,3 +55,11 @@ http://localhost:8080/meetup/meetUpID/1
 5: Fetch the All user details :
 http://localhost:8080/meetup/all
 
+
+6: Swagger implementation for Documentation
+http://localhost:8080/swagger-ui.html
+
+
+
+
+
