@@ -45,14 +45,14 @@ input :
 
 
 4 : Fetch the user details by meetUpID
- A- > if user id will be in db return the user details.
- B-> if not then it will throw the exception	
+ A- > if user id will be in db return the user details.<br/>
+ B-> if not then it will throw the exception<br/>	
 http://localhost:8080/meetup/meetUpID/1
 
 
 
 
-5: Fetch the All user details :
+5: Fetch the All user details :<br/>
 http://localhost:8080/meetup/all
 
 
