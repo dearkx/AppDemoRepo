@@ -1,8 +1,7 @@
 # AppDemoRepo
 
-1 . create new user : 
-http://localhost:8080/meetup/
-
+1 . create new user :<br/>
+ API ENDPOINT : http://localhost:8080/meetup/
 input :
 	
 	{
