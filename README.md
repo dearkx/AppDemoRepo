@@ -13,7 +13,7 @@ input :
        "password": "xyz"
 	}
 
-
+=================================================================<br/>
 
 2 : update user in database:<br/>
 Note: Here i am updating only firstName , lastName and password<br/>
@@ -30,7 +30,7 @@ input :
   "password": "kundan"
 
 }
-
+=================================================================<br/>
 
 
 3: delete user in database:
