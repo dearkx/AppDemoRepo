@@ -16,7 +16,7 @@ input :
 
 
 2 : update user in database:
-Note: Here i am updating only firstName and lastName
+Note: Here i am updating only firstName , lastName and password
 	-> meetUpID must valid in table then only update will work
 
 http://localhost:8080/meetup/update
@@ -24,9 +24,11 @@ http://localhost:8080/meetup/update
 input :
 
 {	
- "meetUpID": 7,
- "firstName": "test",
- "lastName": "example"
+  "meetUpID": 7,
+  "firstName": "kk",
+  "lastName": "test",
+  "password": "kundan"
+
 }
 
 
