@@ -30,7 +30,7 @@ input :
   "password": "kundan"
 
 }
-=================================================================<br/>
+</br>=================================================================<br/>
 
 
 3: delete user in database:
@@ -41,7 +41,7 @@ input :
  
  API : http://localhost:8080/meetup/delete/2
 
-
+</br>=================================================================<br/>
 
 
 4 : Fetch the user details by meetUpID<br/>
@@ -50,11 +50,12 @@ input :
 http://localhost:8080/meetup/meetUpID/1
 
 
-
+</br>=================================================================<br/>
 
 5: Fetch the All user details :<br/>
 http://localhost:8080/meetup/all
 
+</br>=================================================================<br/>
 
 6: Swagger implementation for Documentation<br/>
 http://localhost:8080/swagger-ui.html
