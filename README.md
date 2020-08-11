@@ -56,7 +56,7 @@ http://localhost:8080/meetup/meetUpID/1
 http://localhost:8080/meetup/all
 
 
-6: Swagger implementation for Documentation
+6: Swagger implementation for Documentation<br/>
 http://localhost:8080/swagger-ui.html
 
 
