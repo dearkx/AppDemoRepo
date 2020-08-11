@@ -16,49 +16,44 @@ input :
 =================================================================<br/>
 
 2 : update user in database:<br/>
-Note: Here i am updating only firstName , lastName and password<br/>
-	-> meetUpID must valid in table then only update will work<br/>
+	A->Note: Here i am updating only firstName , lastName and password<br/>
+	B->meetUpID must valid in table then only update will work<br/>
 
-http://localhost:8080/meetup/update
-
-input :
-
+ API ENDPOINT : http://localhost:8080/meetup/update
+ 
+</br>input :</br>
 {	
   "meetUpID": 7,
   "firstName": "kk",
   "lastName": "test",
   "password": "kundan"
-
 }
 </br>=================================================================<br/>
 
 
 3: delete user in database:
-
- This Endpoint is used to delete the data from table using by meetUpID<br/> 
- A- > if user id will be in db it will delete that user record in db.<br/>
- B-> if not then it will throw the exception<br/>	
- 
- API : http://localhost:8080/meetup/delete/2
+   This Endpoint is used to delete the data from table using by meetUpID<br/> 
+	A- > if user id will be in db it will delete that user record in db.<br/>
+ 	B-> if not then it will throw the exception<br/>	
+	API ENDPOINT : http://localhost:8080/meetup/delete/2
 
 </br>=================================================================<br/>
 
-
 4 : Fetch the user details by meetUpID<br/>
- A- > if user id will be in db return the user details.<br/>
- B-> if not then it will throw the exception<br/>	
-http://localhost:8080/meetup/meetUpID/1
+    A-> if user id will be in db return the user details.<br/>
+    B-> if not then it will throw the exception<br/>	
+    API ENDPOINT :  http://localhost:8080/meetup/meetUpID/1
 
 
 </br>=================================================================<br/>
 
 5: Fetch the All user details :<br/>
-http://localhost:8080/meetup/all
+   API ENDPOINT: http://localhost:8080/meetup/all
 
 </br>=================================================================<br/>
 
 6: Swagger implementation for Documentation<br/>
-http://localhost:8080/swagger-ui.html
+   API ENDPOINT : http://localhost:8080/swagger-ui.html
 
 
 
