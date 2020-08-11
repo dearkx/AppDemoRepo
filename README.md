@@ -35,14 +35,15 @@
 	A- > if user id will be in db it will delete that user record in db.<br/>
  	B-> if not then it will throw the exception<br/>
         API ENDPOINT :  http://localhost:8080/meetup/delete/{meetUpID}<br/>
-   <br/>Example :       http://localhost:8080/meetup/delete/2<br/>
+        Example :       http://localhost:8080/meetup/delete/2
 
 </br>=================================================================<br/>
 
 4 : Fetch the user details by meetUpID<br/>
     A-> if user id will be in db return the user details.<br/>
     B-> if not then it will throw the exception<br/>	
-    API ENDPOINT :  http://localhost:8080/meetup/meetUpID/1
+    API ENDPOINT :  http://localhost:8080/meetup/meetUpID/{meetUpID}
+<br/>Example : http://localhost:8080/meetup/meetUpID/1 
 
 
 </br>=================================================================<br/>
