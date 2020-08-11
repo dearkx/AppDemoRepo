@@ -65,6 +65,7 @@ public class UserRegistrationServiceImpl implements UserRegistrationService {
 			UserRegistration entity = users.get();
 			entity.setFirstName(req.getFirstName());
 			entity.setLastName(req.getLastName());
+			entity.setPassword(req.getPassword());
 			UserRegistration userR = registrationRepository.save(entity);
 			return userR;
 		}

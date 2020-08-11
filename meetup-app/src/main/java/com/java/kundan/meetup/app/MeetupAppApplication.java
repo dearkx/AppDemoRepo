@@ -8,7 +8,7 @@ public class MeetupAppApplication {
 
 	public static void main(String[] args) {
 		SpringApplication.run(MeetupAppApplication.class, args);
-		System.out.println("kundan");
+		
 	}
 
 }
