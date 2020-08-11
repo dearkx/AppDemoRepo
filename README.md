@@ -1,6 +1,6 @@
 # AppDemoRepo
 
-1 . create new user :<br/>
+1 . Create new user :<br/>
  API ENDPOINT : http://localhost:8080/meetup/
 <br/>input :
 	
@@ -14,7 +14,7 @@
 
 =================================================================<br/>
 
-2 : update user in database:<br/>
+2 : Update user in database:<br/>
 	A->Note: Here i am updating only firstName , lastName and password<br/>
 	B->meetUpID must valid in table then only update will work<br/>
 
@@ -30,7 +30,7 @@
 </br>=================================================================<br/>
 
 
-3: delete user in database:
+3: Delete user in database:
    This Endpoint is used to delete the data from table using by meetUpID<br/> 
 	A- > if user id will be in db it will delete that user record in db.<br/>
  	B-> if not then it will throw the exception<br/>	
