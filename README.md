@@ -1,9 +1,8 @@
 # AppDemoRepo
 
-1 . create new user : 
-http://localhost:8080/meetup/
-
-input :
+1 . Create new user :<br/>
+ API ENDPOINT : http://localhost:8080/meetup/
+<br/>input :
 	
 	{
 	  "firstName": "kundan",
@@ -13,45 +12,51 @@ input :
        "password": "xyz"
 	}
 
+=================================================================<br/>
 
+2 : Update user in database:<br/>
+	A->Note: Here i am updating only firstName , lastName and password<br/>
+	B->meetUpID must valid in table then only update will work<br/>
 
-2 : update user in database:
-Note: Here i am updating only firstName , lastName and password
-	-> meetUpID must valid in table then only update will work
-
-http://localhost:8080/meetup/update
-
-input :
-
+ API ENDPOINT : http://localhost:8080/meetup/update
+ 
+</br>input :</br>
 {	
   "meetUpID": 7,
   "firstName": "kk",
   "lastName": "test",
   "password": "kundan"
-
 }
+</br>=================================================================<br/>
+
+
+3: Delete user in database:
+   This Endpoint is used to delete the data from table using by meetUpID<br/> 
+	A- > if user id will be in db it will delete that user record in db.<br/>
+ 	B-> if not then it will throw the exception<br/>
+        API ENDPOINT :  http://localhost:8080/meetup/delete/{meetUpID}<br/>
+        Example :       http://localhost:8080/meetup/delete/2
+
+</br>=================================================================<br/>
+
+4 : Fetch the user details by meetUpID<br/>
+    A-> if user id will be in db return the user details.<br/>
+    B-> if not then it will throw the exception<br/>	
+    API ENDPOINT :  http://localhost:8080/meetup/meetUpID/{meetUpID}
+<br/>Example : http://localhost:8080/meetup/meetUpID/1 
+
+
+</br>=================================================================<br/>
+
+5: Fetch the All user details :<br/>
+   API ENDPOINT: http://localhost:8080/meetup/all
+
+</br>=================================================================<br/>
+
+6: Swagger implementation for Documentation<br/>
+   API ENDPOINT : http://localhost:8080/swagger-ui.html
 
 
 
-3: delete user in database:
 
- This Endpoint is used to delete the data from table using by meetUpID 
- A- > if user id will be in db it will delete that user record in db.
- B-> if not then it will throw the exception	
- 
- API : http://localhost:8080/meetup/delete/2
-
-
-
-
-4 : Fetch the user details by meetUpID
- A- > if user id will be in db return the user details.
- B-> if not then it will throw the exception	
-http://localhost:8080/meetup/meetUpID/1
-
-
-
-
-5: Fetch the All user details :
-http://localhost:8080/meetup/all
 
