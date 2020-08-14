@@ -38,6 +38,7 @@ Example  : http://localhost:8080/event/id/1
 ====================================================================<br/>
 
 <b>MeetUp App Service Details</b><br/>
+<b>MeetUp App is basically for register the user<b><br/>
 1 . Create new user :<br/>
  API ENDPOINT : http://localhost:8080/meetup/
 <br/>input :
