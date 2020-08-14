@@ -1,7 +1,7 @@
 # AppDemoRepo
 
 <B>Event : This is example of One to Many relationship</B><br/>
-1-> this requirement will show <br/>
+1-> Requirement :<br/>
  what are the events running on a particular place <br/>
  for example  : place : bangelore<br/>
  		events: 1- dance event and also details <br/>
