@@ -1,5 +1,43 @@
 # AppDemoRepo
-<b>MeetUp Service Details</b><br/>
+
+<B>Event : This is example of One to Many relationship</B><br/>
+1-> this requirement will show <br/>
+ what are the events running on a particular place <br/>
+ for example  : place : bangelore<br/>
+ 		events: 1- dance event and also details <br/>
+			2- education events also detailsetc<br/>
+			
+Store events:<br/>
+API ENDPOINT : http://localhost:8080/event <br/>
+<br/>input :<br/>
+{	
+	"eventPlace":"Bangalore",
+	"event":[
+			{
+				"eventName":"Dance Event",
+				"date":"2020-08-22",
+				"eventDescription":"there are many dance events running in bangalore today"
+			},
+			{
+				"eventName":"Education Event",
+				"date":"2020-08-17",
+				"eventDescription":"1- For java training go for some java training center,2-For python join Abc training center "
+			}
+		]
+}
+<br/>
+
+2 : Find the events based on city:<br/>
+API ENDPOINT  : http://localhost:8080/event/{eventPlace} <br/>
+Example  : http://localhost:8080/event/delhi
+
+3 : Find the events based on ID:<br/>
+API ENDPOINT  :http://localhost:8080/event/id/{eVID} <br/>
+Example  : http://localhost:8080/event/id/1
+<br/>  
+====================================================================<br/>
+
+<b>MeetUp App Service Details</b><br/>
 1 . Create new user :<br/>
  API ENDPOINT : http://localhost:8080/meetup/
 <br/>input :
