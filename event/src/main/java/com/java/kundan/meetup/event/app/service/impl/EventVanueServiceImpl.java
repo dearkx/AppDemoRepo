@@ -11,7 +11,6 @@ import com.java.kundan.meetup.event.app.entity.EventVanue;
 import com.java.kundan.meetup.event.app.repository.EventVanueRepository;
 import com.java.kundan.meetup.event.app.request.EventVanueRequest;
 import com.java.kundan.meetup.event.app.response.EventResponse;
-import com.java.kundan.meetup.event.app.response.EventVanueResponse;
 import com.java.kundan.meetup.event.app.service.EventVanueService;
 
 @Service
@@ -51,22 +50,41 @@ public class EventVanueServiceImpl implements EventVanueService {
 
 	
 	@Override
-	public EventVanueResponse findByEventPlace(String placeName) {
-		EventVanue findByEventPlace = eventRepository.findByEventPlace(placeName);
-		if (findByEventPlace != null) {
-			EventVanueResponse response = new EventVanueResponse();
-			response.setEventVenue(findByEventPlace);
-			return response;
-		}
-		return null;
+	public EventResponse findByEventPlace(String placeName) {
+		EventVanue eventDetails = eventRepository.findByEventPlace(placeName);
+		EventResponse eventResponse = new EventResponse();
+		eventResponse.setEVid(eventDetails.getEVid());
+		eventResponse.setEventPlace(eventDetails.getEventPlace());
+		eventResponse.setEvent(eventDetails.getEvent());
+		return eventResponse;
 	}
 
 
 	@Override
-	public EventVanueResponse getEventById(Long id){
+	public EventResponse getEventById(Long id){
 		EventVanue eventVenue = eventRepository.findById(id).get();
-		EventVanueResponse res = new EventVanueResponse();
-		res.setEventVenue(eventVenue);
+		EventResponse er = new EventResponse();
+		er.setEVid(eventVenue.getEVid());
+		er.setEventPlace(eventVenue.getEventPlace());
+		er.setEvent(eventVenue.getEvent());
+		return er;
+	}
+
+
+	@Override
+	public List<EventResponse> findAllPlace() {
+		List<EventResponse> res = new ArrayList<>();
+		List<EventVanue> findAll = eventRepository.findAll();
+		for (EventVanue eventVanue : findAll) {
+			EventResponse er = new EventResponse();
+			er.setEVid(eventVanue.getEVid());
+			er.setEventPlace(eventVanue.getEventPlace());
+			er.setEvent(eventVanue.getEvent());
+			res.add(er);
+		}
+		
+		 
+		
 		return res;
 	}
 

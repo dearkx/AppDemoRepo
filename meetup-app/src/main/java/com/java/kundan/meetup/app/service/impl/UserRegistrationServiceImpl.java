@@ -84,4 +84,11 @@ public class UserRegistrationServiceImpl implements UserRegistrationService {
 			return message;
 		}
 	}
+
+
+	@Override
+	public UserRegistration getByUser(String user) {
+		UserRegistration findByUsername = registrationRepository.findByUsername(user);
+		return findByUsername;
+	}
 }

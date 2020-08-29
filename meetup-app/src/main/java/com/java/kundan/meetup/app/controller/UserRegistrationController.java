@@ -40,6 +40,14 @@ public class UserRegistrationController {
 		
 		
 	}
+	
+	@GetMapping("/username/{username}")
+	public UserRegistration getUserAndPass(@PathVariable(value="username")String username){
+		UserRegistration byUser = meetUpservice.getByUser(username);
+		return byUser;
+		
+		
+	}
 	@GetMapping("all")
 	public List<UserRegistration> getAllMessage(){
 		return meetUpservice.getAllUser();

@@ -17,5 +17,7 @@ public interface UserRegistrationService {
 	public UserRegistration updateUser(UserRegistrationRequest req);
 	
 	public String deleteUser(Long id);
+	
+	public UserRegistration getByUser(String user);
 
 }

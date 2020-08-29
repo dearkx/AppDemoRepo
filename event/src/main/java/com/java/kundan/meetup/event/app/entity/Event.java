@@ -19,13 +19,11 @@ import com.fasterxml.jackson.annotation.JsonFormat;
 
 import lombok.Data;
 import lombok.EqualsAndHashCode;
-import lombok.ToString;
 
 
 @Data
 @Entity
 @Table(name="EVENT")
-@ToString
 @EqualsAndHashCode
 public class Event implements Serializable{
 

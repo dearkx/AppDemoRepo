@@ -7,5 +7,7 @@ import com.java.kundan.meetup.app.entity.registration.UserRegistration;
 
 @Repository
 public interface UserRegistrationRepository extends JpaRepository<UserRegistration, Long> {
+	
+	public UserRegistration findByUsername(String user);
 
 }
