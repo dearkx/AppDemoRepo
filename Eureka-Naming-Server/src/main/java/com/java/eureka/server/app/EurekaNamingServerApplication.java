@@ -11,5 +11,4 @@ public class EurekaNamingServerApplication {
 	public static void main(String[] args) {
 		SpringApplication.run(EurekaNamingServerApplication.class, args);
 	}
-
 }
