@@ -8,7 +8,7 @@
 			2- education events also detailsetc<br/>
 			
 Store events:<br/>
-API ENDPOINT : http://localhost:8080/event <br/>
+API ENDPOINT : http://localhost:9002/event <br/>
 <br/>input :<br/>
 {	
 	"eventPlace":"Bangalore",
@@ -28,19 +28,19 @@ API ENDPOINT : http://localhost:8080/event <br/>
 <br/>
 
 2 : Find the events based on city:<br/>
-API ENDPOINT  : http://localhost:8080/event/{eventPlace} <br/>
-Example  : http://localhost:8080/event/delhi
+API ENDPOINT  : http://localhost:9002/event/{eventPlace} <br/>
+Example  : http://localhost:9002/event/delhi
 
 3 : Find the events based on ID:<br/>
-API ENDPOINT  :http://localhost:8080/event/id/{eVID} <br/>
-Example  : http://localhost:8080/event/id/1
+API ENDPOINT  :http://localhost:9002/event/id/{eVID} <br/>
+Example  : http://localhost:9002/event/id/1
 <br/>  
 ====================================================================<br/>
 
 <b>MeetUp App Service Details</b><br/>
 <b>MeetUp App is basically for register the user<b><br/>
 1 . Create new user :<br/>
- API ENDPOINT : http://localhost:8080/meetup/
+ API ENDPOINT : http://localhost:9000/meetup/
 <br/>input :
 	
 	{
@@ -57,7 +57,7 @@ Example  : http://localhost:8080/event/id/1
 	A->Note: Here i am updating only firstName , lastName and password<br/>
 	B->meetUpID must valid in table then only update will work<br/>
 
- API ENDPOINT : http://localhost:8080/meetup/update
+ API ENDPOINT : http://localhost:9000/meetup/update
  
 </br>input :</br>
 {	
@@ -73,27 +73,27 @@ Example  : http://localhost:8080/event/id/1
    This Endpoint is used to delete the data from table using by meetUpID<br/> 
 	A- > if user id will be in db it will delete that user record in db.<br/>
  	B-> if not then it will throw the exception<br/>
-        API ENDPOINT :  http://localhost:8080/meetup/delete/{meetUpID}<br/>
-        Example :       http://localhost:8080/meetup/delete/2
+        API ENDPOINT :  http://localhost:9000/meetup/delete/{meetUpID}<br/>
+        Example :       http://localhost:9000/meetup/delete/2
 
 </br>=================================================================<br/>
 
 4 : Fetch the user details by meetUpID<br/>
     A-> if user id will be in db return the user details.<br/>
     B-> if not then it will throw the exception<br/>	
-    API ENDPOINT :  http://localhost:8080/meetup/meetUpID/{meetUpID}
-<br/>Example : http://localhost:8080/meetup/meetUpID/1 
+    API ENDPOINT :  http://localhost:9000/meetup/meetUpID/{meetUpID}
+<br/>Example : http://localhost:9000/meetup/meetUpID/1 
 
 
 </br>=================================================================<br/>
 
 5: Fetch the All user details :<br/>
-   API ENDPOINT: http://localhost:8080/meetup/all
+   API ENDPOINT: http://localhost:9000/meetup/all
 
 </br>=================================================================<br/>
 
 6: Swagger implementation for Documentation<br/>
-   API ENDPOINT : http://localhost:8080/swagger-ui.html
+   API ENDPOINT : http://localhost:9000/swagger-ui.html
 
 
 
