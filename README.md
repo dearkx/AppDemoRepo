@@ -8,7 +8,7 @@
 			2- education events also detailsetc<br/>
 			
 Store events:<br/>
-API ENDPOINT : http://localhost:8080/event <br/>
+API ENDPOINT : http://localhost:9002/event <br/>
 <br/>input :<br/>
 {	
 	"eventPlace":"Bangalore",
@@ -28,12 +28,12 @@ API ENDPOINT : http://localhost:8080/event <br/>
 <br/>
 
 2 : Find the events based on city:<br/>
-API ENDPOINT  : http://localhost:8080/event/{eventPlace} <br/>
-Example  : http://localhost:8080/event/delhi
+API ENDPOINT  : http://localhost:9002/event/{eventPlace} <br/>
+Example  : http://localhost:9002/event/delhi
 
 3 : Find the events based on ID:<br/>
-API ENDPOINT  :http://localhost:8080/event/id/{eVID} <br/>
-Example  : http://localhost:8080/event/id/1
+API ENDPOINT  :http://localhost:9002/event/id/{eVID} <br/>
+Example  : http://localhost:9002/event/id/1
 <br/>  
 ====================================================================<br/>
 
